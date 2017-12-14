@@ -1,0 +1,53 @@
+html {
+	background-image: url("../images/paddys.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header img {
+	display: block;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.character-image {
+	display: inline-block;
+  	height: 185px;
+	padding: 0px 20px 0px 20px;
+	margin: 0px 2px 0px 2px;
+	background-color: rgba(255,255,255,0.8);
+	border: solid 2px;
+	border-color: green;
+	border-radius: 5px;
+}
+
+.character-image img {
+	border-radius: 5px;
+}
+
+.character-image p {
+	font-size: 15px;
+	font-family: monospace;
+	text-align: center;
+	margin: 0px 2px 0px 2px;
+
+}
+
+.character-image p.health {
+	font-size: 10px;
+}
+
+h2 {
+	font-family: monospace;
+	color: white;
+}
+
+#your-character {
+	height: 225px;
+}

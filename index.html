@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+	<head>
+		<title>It's Always Sunny in Philadelphia RPG!</title>
+
+		<!-- link to stylesheets -->
+		<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		
+		<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+		
+	</head>
+
+	<body>
+
+			<header>
+				<img src="assets/images/title.png" alt="title">
+			</header>
+
+	      <!-- Available characters -->
+	      <div id="characters-available">
+	        <span class="character-image available-character" id="charlie">
+	          <p>Charlie</p>
+	          <img src="./assets/images/charlie.jpg" alt="Charlie Character" id="charlie-image" style="height: 150px">
+	          <p class="health">120</p>
+	        </span>
+
+	        <span class="character-image available-character" id="dee">
+	          <p>Dee</p>
+	          <img src="./assets/images/dee.jpg" alt="Dee Character" id="dee-image" style="height: 150px">
+	          <p class="health">125</p>
+	        </span>
+
+	        <span class="character-image available-character" id="dennis">
+	          <p>Dennis</p>
+	          <img src="./assets/images/dennis.jpg" alt="Dennis Character" id="dennis-image" style="height: 150px">
+	          <p class="health">150</p>
+	        </span>
+
+	        <span class="character-image available-character" id="frank">
+	          <p>Frank</p>
+	          <img src="./assets/images/frank.jpg" alt="Frank Character" id="frank-image" style="height: 150px">
+	          <p class="health">110</p>
+	        </span>
+
+	        <span class="character-image available-character" id="mac">
+	          <p>Mac</p>
+	          <img src="./assets/images/mac.jpg" alt="Mac Character" id="mac-image" style="height: 150px">
+	          <p class="health">130</p>
+	        </span>
+	      </div> 
+	      <!-- End available characters -->
+
+	      <!-- Your chosen character -->
+	      <div id="your-character">
+	        <h2>Your Character</h2>
+	      </div> 
+	      <!-- End your chosen character-->
+
+	      <!-- Enemies available to attack -->
+	      <div id="enemies-available">
+	        <h2>Enemies Available To Attack</h2>
+	      </div> 
+	      <!-- End enemies available to attack -->
+
+	      <!-- Fight section -->
+	      <div id="fight-section">
+	        <h2>Fight Section</h2>
+	        <button id="attack">Attack</button>
+	      </div> 
+	      <!-- End fight section -->
+
+	      <!-- Defender section -->
+	      <div id="defender-section">
+	        <h2>Defender</h2>
+	      </div> 
+	      <!-- End defender section -->
+
+	      <!-- Game message section -->
+	      <div id="message-section">
+	        <div id="game-message"></div>
+	        <button id="restart">Restart</button>
+	      </div> 
+	      <!-- Game message section -->	
+
+	</body>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</html>
