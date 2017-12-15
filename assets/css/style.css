@@ -89,13 +89,13 @@ h2 {
 	float: left;
 }
 
-#game-message {
+#message-section {
 	width: 60%;
 	float: right;
 	margin-top: 15px;
 }
 
-#game-message p {
+#message-section p {
 	font-family: monospace;
 	color: white;
 }

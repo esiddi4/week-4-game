@@ -187,9 +187,7 @@ var setCharacter = function (currentCharacter) {
 					$("#game-message").html("<p>You have won the game!!!</p><p>Play again?</p>");
 					$("#restart").show();
 		        }
-			}
-
-			if (defenderChosen === false) {
+			} else if (defenderChosen === false) {
 					$("#game-message").html("<p>No enemy here.</p>");
 				}
 
