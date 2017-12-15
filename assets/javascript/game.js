@@ -240,19 +240,20 @@ $(document).ready(function() {
 					}
 				}
 
-			} else {
+			}
 
+			if (character.health <= 0) {
 				$("#game-message").html("<p>You have been defeated by " + defender.name + "...GAME OVER!</p>");
 				$("#restart").show();
 				gameOver = true;
-
 			}
 
 		}
-
-		// RESET UPON CLICKING RESTART BUTTON
-		$("#restart").on("click", function() {
-			reset();
-		});
 	});
+
+	// RESET UPON CLICKING RESTART BUTTON
+	$("#restart").on("click", function() {
+		reset();
+	});
+	
 });
