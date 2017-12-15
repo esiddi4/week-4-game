@@ -2,15 +2,15 @@
 var charlie = {
 	name: "Charlie",
 	health: 150,
-	baseAttack: 5,
-	attack: 5
+	baseAttack: 10,
+	attack: 10
 };
 
 var dee = {
 	name: "Dee",
 	health: 250,
-	baseAttack: 10,
-	attack: 10
+	baseAttack: 5,
+	attack: 5
 };
 
 var dennis = {
@@ -22,16 +22,16 @@ var dennis = {
 
 var frank = {
 	name: "Frank",
-	health: 110,
-	baseAttack: 5,
-	attack: 5
+	health: 125,
+	baseAttack: 20,
+	attack: 20
 };
 
 var mac = {
 	name: "Mac",
 	health: 225,
-	baseAttack: 10,
-	attack: 10
+	baseAttack: 15,
+	attack: 15
 };
 
 // STORE CHARACTERS
@@ -103,7 +103,7 @@ var reset = function () {
 // BEGIN GAME:
 
 $(document).ready(function() {
-	
+
 	$("#charlie").children(".health").html(charlie.health);
 	$("#dee").children(".health").html(dee.health);
 	$("#dennis").children(".health").html(dennis.health);
