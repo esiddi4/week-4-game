@@ -10,6 +10,16 @@ html {
     background-size: cover;
 }
 
+body {
+	margin: 10px;
+}
+
+.container {
+	width: 60%;
+	text-align: center;
+	margin: 0 auto;
+}
+
 header img {
 	display: block;
     margin: auto;
@@ -22,8 +32,8 @@ header img {
 	padding: 0px 20px 0px 20px;
 	margin: 0px 2px 0px 2px;
 	background-color: rgba(255,255,255,0.8);
-	border: solid 2px;
 	border-color: green;
+	border: solid 2px;
 	border-radius: 5px;
 }
 
@@ -51,3 +61,24 @@ h2 {
 #your-character {
 	height: 225px;
 }
+
+.available-character, .chosen-character {
+	background-color: rgba(255,255,255,0.8);
+	border-color: green;
+}
+
+.enemy-character {
+	background-color: rgba(199,20,0,0.8);
+	border-color: black;
+}
+
+.defender-character {
+	background-color: rgba(0,0,0,0.8);
+	border-color: green;
+}
+
+.defender-character p {
+	color: white;
+}
+
+
