@@ -236,7 +236,7 @@ $(document).ready(function() {
 				//check if all defenders have been defeated
 					if (enemiesDefeated === 4) {
 						gameOver = true;
-						$("#game-message").html("<p>You have won the game!!!</p><p>Play again?</p>");
+						$("#game-message").html("<p>You have won the game!!!</p>");
 						$("#restart").show();
 					}
 				}
