@@ -14,16 +14,16 @@ body {
 	margin: 10px;
 }
 
-.container {
-	width: 60%;
-	text-align: center;
-	margin: 0 auto;
-}
-
 header img {
 	display: block;
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .character-image {
@@ -58,11 +58,50 @@ h2 {
 	color: white;
 }
 
+#characters-available {
+	width: 60%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#your-character, #enemies-available {
+	height: 250px;
+	margin-bottom: 25px;
+}
+
 #your-character {
-	height: 225px;
+	width: 40%;
+	float: left;
+}
+
+#enemies-available {
+	width: 60%;
+	float: right;
+}
+
+#fight-section {
+	width: 60%;
+	float: right;
+}
+
+#defender-section {
+	width: 40%;
+	float: left;
+}
+
+#game-message {
+	width: 60%;
+	float: right;
+	margin-top: 15px;
+}
+
+#game-message p {
+	font-family: monospace;
+	color: white;
 }
 
 .available-character, .chosen-character {
+	clear: both;
 	background-color: rgba(255,255,255,0.8);
 	border-color: green;
 }
