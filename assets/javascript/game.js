@@ -113,94 +113,95 @@ $(document).ready(function() {
 	// HIDE RESTART BUTTON UPON LOAD
 	$("#restart").hide();
 
-
+	if (!gameOver) {
 	// DETERMINE WHICH CHARACTER USER HAS CHOSEN:
 	// CHARLIE
-	$("#charlie").on("click", function() {
-		// choose as your character
-		if (!characterChosen) {
-			console.log("Charlie is the chosen character");
-			$("#charlie").removeClass("available-character").addClass("chosen-character");
-			$("#your-character").append(this);
-			setCharacter(charlie);
-			enemies();
-		} else if (characterChosen && !defenderChosen) {
-			console.log("Charlie is the chosen defender");
-			$("#charlie").removeClass("enemy-character").addClass("defender-character");
-			$("#defender-section").append(this);
-			setDefender(charlie);
-		}
-
-	});
-
-	// DEE
-	$("#dee").on("click", function() {
-		// choose as your character
+		$("#charlie").on("click", function() {
+			// choose as your character
 			if (!characterChosen) {
-			console.log("Dee is the chosen character");
-			$("#dee").removeClass("available-character").addClass("chosen-character");
-			$("#your-character").append(this);
-			setCharacter(dee);
-			enemies();
-		} else if (characterChosen && !defenderChosen) {
-			console.log("Dee is the chosen defender");
-			$("#dee").removeClass("enemy-character").addClass("defender-character");
-			$("#defender-section").append(this);
-			setDefender(dee);
-		}
-	});
-
-	// DENNIS
-	$("#dennis").on("click", function() {
-		if (!characterChosen) {
-				console.log("Dennis is the chosen character");
-				$("#dennis").removeClass("available-character").addClass("chosen-character");
+				console.log("Charlie is the chosen character");
+				$("#charlie").removeClass("available-character").addClass("chosen-character");
 				$("#your-character").append(this);
-				setCharacter(dennis);
-
+				setCharacter(charlie);
 				enemies();
 			} else if (characterChosen && !defenderChosen) {
-				console.log("Dennis is the chosen defender");
-				$("#dennis").removeClass("enemy-character").addClass("defender-character");
+				console.log("Charlie is the chosen defender");
+				$("#charlie").removeClass("enemy-character").addClass("defender-character");
 				$("#defender-section").append(this);
-				setDefender(dennis);
+				setDefender(charlie);
 			}
-	});
 
-	// FRANK
-	$("#frank").on("click", function() {
+		});
 
-			if (!characterChosen) {
-				console.log("Frank is the chosen character");
-				$("#frank").removeClass("available-character").addClass("chosen-character");
+		// DEE
+		$("#dee").on("click", function() {
+			// choose as your character
+				if (!characterChosen) {
+				console.log("Dee is the chosen character");
+				$("#dee").removeClass("available-character").addClass("chosen-character");
 				$("#your-character").append(this);
-				setCharacter(frank);
-
+				setCharacter(dee);
 				enemies();
 			} else if (characterChosen && !defenderChosen) {
-				console.log("Frank is the chosen defender");
-				$("#frank").removeClass("enemy-character").addClass("defender-character");
+				console.log("Dee is the chosen defender");
+				$("#dee").removeClass("enemy-character").addClass("defender-character");
 				$("#defender-section").append(this);
-				setDefender(frank);
+				setDefender(dee);
 			}
-	});
+		});
 
-	// MAC
-	$("#mac").on("click", function() {
+		// DENNIS
+		$("#dennis").on("click", function() {
+			if (!characterChosen) {
+					console.log("Dennis is the chosen character");
+					$("#dennis").removeClass("available-character").addClass("chosen-character");
+					$("#your-character").append(this);
+					setCharacter(dennis);
 
-		if (!characterChosen) {
-			console.log("Mac is the chosen character");
-			$("#mac").removeClass("available-character").addClass("chosen-character");
-			$("#your-character").append(this);
-			setCharacter(mac);
-			enemies();
-		} else if (characterChosen && !defenderChosen) {
-			console.log("Mac is the chosen defender");
-			$("#mac").removeClass("enemy-character").addClass("defender-character");
-			$("#defender-section").append(this);
-			setDefender(mac);
-		}
-	});
+					enemies();
+				} else if (characterChosen && !defenderChosen) {
+					console.log("Dennis is the chosen defender");
+					$("#dennis").removeClass("enemy-character").addClass("defender-character");
+					$("#defender-section").append(this);
+					setDefender(dennis);
+				}
+		});
+
+		// FRANK
+		$("#frank").on("click", function() {
+
+				if (!characterChosen) {
+					console.log("Frank is the chosen character");
+					$("#frank").removeClass("available-character").addClass("chosen-character");
+					$("#your-character").append(this);
+					setCharacter(frank);
+
+					enemies();
+				} else if (characterChosen && !defenderChosen) {
+					console.log("Frank is the chosen defender");
+					$("#frank").removeClass("enemy-character").addClass("defender-character");
+					$("#defender-section").append(this);
+					setDefender(frank);
+				}
+		});
+
+		// MAC
+		$("#mac").on("click", function() {
+
+			if (!characterChosen) {
+				console.log("Mac is the chosen character");
+				$("#mac").removeClass("available-character").addClass("chosen-character");
+				$("#your-character").append(this);
+				setCharacter(mac);
+				enemies();
+			} else if (characterChosen && !defenderChosen) {
+				console.log("Mac is the chosen defender");
+				$("#mac").removeClass("enemy-character").addClass("defender-character");
+				$("#defender-section").append(this);
+				setDefender(mac);
+			}
+		});
+	}
 
 
 
@@ -255,5 +256,5 @@ $(document).ready(function() {
 	$("#restart").on("click", function() {
 		reset();
 	});
-	
+
 });
